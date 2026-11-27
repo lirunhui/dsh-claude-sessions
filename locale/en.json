@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Claude Code sessions",
+    "description": "Lists every Claude Code CLI transcript under ~/.claude/projects and resumes the session you pick in a new terminal, running claude --resume in that session's own working directory.",
+    "detail": "docs/DETAIL.md"
+  }
+}

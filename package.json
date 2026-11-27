@@ -1,0 +1,60 @@
+{
+  "name": "dsh-claude-sessions",
+  "version": "0.1.0",
+  "description": "Browse every Claude Code CLI session on this machine from the DSH sidebar and resume one in a new terminal.",
+  "type": "module",
+  "license": "MIT",
+  "author": "lirunhui",
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek-harness",
+    "claude-code",
+    "claude",
+    "claude-sessions",
+    "session-browser",
+    "resume",
+    "terminal"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lirunhui/dsh-claude-sessions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lirunhui/dsh-claude-sessions/issues"
+  },
+  "homepage": "https://github.com/lirunhui/dsh-claude-sessions#readme",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}

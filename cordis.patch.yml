@@ -1,0 +1,11 @@
+# Bundle patch: inserts the Claude Code session browser into the profile's layer stack.
+- insert:
+    - id: dsh-claude-sessions
+      name: 'dsh-claude-sessions'
+      # Optional overrides, read defensively by index.js:
+      # config:
+      #   claudeCommand: claude      # command that starts the CLI
+      #   resumeFlag: --resume       # flag that resumes a session by id
+      #   extraArgs: []              # extra arguments before the resume flag
+      #   terminal: auto             # auto | windows-terminal | windows-console
+      #   claudeHome: ''             # empty means ~/.claude

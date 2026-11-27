@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Claude Code 会话",
+    "description": "列出 ~/.claude/projects 下的全部 Claude Code CLI 会话记录，点击任意一条即新开终端，并在该会话自己的工作目录里执行 claude --resume 继续对话。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}
